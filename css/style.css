@@ -7,7 +7,10 @@ font-weight: bold;
 color: white;
 }
 
-
+#MP{display:grid;
+    grid-template-columns: 1fr  ;
+    width: 90%;
+    margin: auto;}
 
 
 
@@ -54,10 +57,10 @@ text-align: center;
 align-items: center;}
 
 
-h1{display:flex;
+/* h1{display:flex;
 justify-content: center;
 flex-direction: column;
-text-align: center;}
+text-align: center;} */
 
 nav a{display: flex;
 flex-direction: row;
@@ -87,3 +90,37 @@ align-items: center;
 
 
 
+@media screen and (min-width:750px)  {
+
+    #MP{display:grid;
+        grid-template-columns: 1fr 1fr ;
+        width: 90%;
+        margin: auto;
+    }
+
+    /* h1{
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;}
+    h2{
+        font: bold;
+    font-size: 20px;
+
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;} */
+
+    p{font: bold;
+    font-size: 25px;}
+
+
+    #Intro {grid-column: 1/span 2  ;
+    }
+
+     #det_content{
+        grid-column: 1/span 2;
+        
+
+
+    }
+   
+    
+} 
