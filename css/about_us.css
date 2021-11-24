@@ -48,9 +48,11 @@ align-items: center;
 text-align: center;}
 
 
+#board_pic_room{width: 100%;
+justify-content: center;
+}
 
-
-
+p{padding-bottom: 35px;}
 
 
 
@@ -74,7 +76,10 @@ font-size: 20px;}
 
 
 
-p{font-weight: bold;}
+p{font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
 
 
 
@@ -87,3 +92,8 @@ flex-direction:row;
 flex-wrap: wrap;
 justify-content: center;
 }
+
+
+#foot{justify-content: center;
+    align-items: center;
+    text-align: center;}

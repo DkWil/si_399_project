@@ -123,15 +123,13 @@ width: 95%;}
     
 
     header{display: flex;
-        flex-direction: row;
+       
     }
 
     /* a{grid-column: 1/span 2;} */
     /* a:link{grid-column: 1/span 2;
     } */
 
-    #nav{flex-direction: row
-    }
-    a:visited{}
+    
 
 }
