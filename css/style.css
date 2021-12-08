@@ -15,41 +15,87 @@ color: white;
 
 .nav_links{    display: flex;
     flex-direction: column;
+    
     }    
 
+.skip{top: -60px;
+        position: absolute;}
+    
+.skip:focus{top: 60px;
+           }
+    
+
+           a:link { 
+            background-color: #000000;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        
+        a:visited{background-color: rgb(148, 16, 11);
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        }
+              
+        a:hover, a:active {
+            background-color: rgb(173, 86, 15);
+              }
 
 
-a:link {
-    background-color: #000000;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-a:visited{background-color: blue;
-color: white;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-border-radius: 10px;}
-      
-a:hover, a:active {
-    background-color: red;
-      }
 
 
+              .flip-card {
+                background-color: transparent;
+                width: 300px;
+                height: 300px;
+                perspective: 1000px;
+              }
+              
+              .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              }
+              
+              .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+              }
+              .flip-card:focus .flip-card-inner {
+                transform: rotateY(180deg);
+              }
+              
+              .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+              }
+              
+              .flip-card-front {
+                background-color: #bbb;
+                color: black;
+              }
+              
+              .flip-card-back {
+                background-color: #2980b9;
+                color: white;
+                transform: rotateY(180deg);
+              }
 
 
-
-
-
-
-
-
+#nav_item_a:active{color: rgb(173, 86, 15);}
 
 
 
@@ -71,20 +117,33 @@ align-items: center;
 text-align: center;}
 
 
-.detroit{display:flex;
-flex-direction: column;
-flex-wrap: wrap;
+.detroit{display:grid;
+    grid-row: 5/span 1;
+    justify-content: center;
 align-items: center;
 
 }
-
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+ 
+    
+    width:900px;
+    height:300px;
+    display:block;
+    z-index:999;
+}
 
 .oak_park{display:grid;
     justify-content: center;
-   
+   padding-top: 20px;
+   padding-bottom: 20px;
+
     /* flex-wrap: wrap; */
     align-items: center;}
-
+#locations{ padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;}
 
 #oak_park_pic{
 justify-content: center;}
@@ -106,33 +165,98 @@ justify-content: center;}
 
     #MP{display:grid;
         grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
         width: 90%;
         margin: auto;
     }
 
-    /* h1{
-        grid-column: 2/span 1;
-        grid-row: 1/span 1;}
-    h2{
-        font: bold;
-    font-size: 20px;
-
-    grid-column: 1/span 1;
-    grid-row: 1/span 1;} */
+    h1{padding-top: 25px;
+        text-align: center;
+        
+    }
+    h2{text-align: center;
+    }
 
     p{font: bold;
     font-size: 25px;}
 
 
-    #Intro {grid-column: 1/span 2  ;
+    #Intro {padding-top: 25px;
+        grid-column: 1/span 2 ;
+        text-align: center;
+        padding-bottom: 25px;
     }
 
      #det_content{
         grid-column: 1/span 2;
         
-
-
+    grid-row: 4;
     }
+
+    #locations{grid-column: 1/span 2;}
    
-    
+    footer{padding-top:200px}
 } 
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    #MP{grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;}
+
+    #par2{display: grid;
+    grid-column: 1/span 5;}
+
+    #locations{display: grid;
+    grid-column: 2/span 1;}
+    #par3{display: grid;
+    grid-row: 3/span 1;
+grid-column: 1/span 5;}
+
+
+
+    #OP_content{width: 100%;
+        grid-column: 3/span 1;
+    grid-row: 5/span 2;}
+
+    #oak_park_pic{width: 200%;}
+
+    #Intro{grid-column: 1/span 5;
+    text-align: center;}
+
+    #det_content{grid-column: 2/span 1;
+    grid-row: 5/span 1;
+padding-right: 20px;}
+
+    .detroit{display: grid;
+        justify-content: center;}
+    #sf_content{display:grid;
+    grid-column: 1/span 1;
+padding-right: 20px;
+width: 85%;}
+
+
+
+    footer{text-align: center;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

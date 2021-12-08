@@ -11,10 +11,13 @@ color: white;}
 
 
 
+.skip{top: -60px;
+    position: absolute;}
 
+    .skip:focus{top: 60px;
+       }
 
-
-a:link {
+a:link { 
     background-color: #000000;
     color: white;
     padding: 14px 25px;
@@ -24,7 +27,7 @@ a:link {
     border-radius: 10px;
 }
 
-a:visited{background-color: blue;
+a:visited{background-color: rgb(177, 15, 15);
 color: white;
 padding: 14px 25px;
 text-align: center;
@@ -41,11 +44,16 @@ a:hover, a:active {
 
 
 
+header{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;}
 
-
-nav{justify-content: center;
-align-items: center;
-text-align: center;}
+nav a{display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;}
 
 
 #board_pic_room{width: 100%;
@@ -97,3 +105,58 @@ justify-content: center;
 #foot{justify-content: center;
     align-items: center;
     text-align: center;}
+
+
+@media screen and (min-width: 750px)  {
+    header {
+        display: flex;
+        flex-direction: row;}
+    nav{
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;}
+        
+    .nav_links{ display: flex;
+        flex-direction: row;
+        justify-content: center;}
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px){
+
+    #mp{display: grid;
+    grid-template-columns: 1fr;}
+    
+    header{
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;}
+
+
+    #nav_links{ display: flex;
+        flex-direction: row;
+        justify-content: center;}
+
+    #board_pic_room{width:90%;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        grid-column: 1/span 1;
+        padding-left: 100px;
+    }
+
+
+}

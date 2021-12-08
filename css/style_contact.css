@@ -38,8 +38,20 @@ border-radius: 10px;}
 a:hover, a:active {
     background-color: red;
       }
+.skip{top: -60px;
+        position: absolute;}
+    
+.skip:focus{top: 60px;
+           }
+    
+
+
+
 
 /* a:visited{ color: crimson;} */
+.nav_links{ display: flex;
+    flex-direction: row;
+    justify-content: center;}
 
 h1 {
     

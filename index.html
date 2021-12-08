@@ -6,15 +6,24 @@
 	<!--<link rel="icon" href="background.jpg">-->
 		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7N4P94XF4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7N4P94XF4J');
+</script>
 		<title>Welcome to Kendrick real estate Management webpage</title> <!--subject to change-->
 	</head>
 	<body>
-		<!-- <a class = "skip">Skip to Main Content</a> -->
+		<a href="#MP" class = "skip">Skip to Main Content</a>
 		<header>
 			<!-- <img src = "K_logo_2.jpeg" alt="" id="logo"> -->
 			<nav>
 				<ul class="nav_links">
-					<li class="nav_item"><a href="index.html">Home</a></li>
+					<li class="nav_item" id="nav_item_a"><a href="index.html">Home</a></li>
 					<li class="nav_item"><a href="about_us.html">About Us</a></li>
 					<li class="nav_item"><a href="Contact.html">Contact</a></li>
 					<li class="nav_item"><a href="Properties.html">Properties</a></li>
@@ -32,26 +41,28 @@
 		<h2>Your local real estate firm </h2>
 		<section id="MP">
            
-                <p id= "Intro">We are a company passionate in real estate with new ideas and a bright future we are here to help you sell or buy properties in the metro detroit area.</p>
-			
+                <p id= "Intro">We are a company passionate in real estate with new ideas and a bright future. Native to the metro Detroit area we know what your looking and can help you find what your dream home. whether your interesting in selling, buying or renting properties we can help you find the right path.</p>
+				<p id= "par2">Take a look at our properties page to see what locations we currently have to offer. If something catches your eye, please go to our contact and fill out a form provided.</p>
+				<p id="par3">You can also take a look at our about us page to learn more about who and what we are as a company. Meet the management team and know who you are working with.</p>
 				<div class="detroit" id="det_content">
-				<img src= "images/detroit_area_image.jpeg" alt="Detroit" id="detriot_pic">
+					<p>Detroit</p>
+				<img src= "images/detroit_area_image.jpeg" alt="Detroit" class="thumbnail" id="detriot_pic">
 
 			</div>
 
 
-				<p id="Intro">We are also availible is these areas:</p>
+				<p id="locations">Provided down below are the cities we are located in:</p>
 
-
-			<div class="oak_park" id="OP_content">
-				<p>Oak Park</p>
-				<img src="images/op_img.jpeg" alt="Oak Park" id="oak_park_pic">
-			</div>
-
+			
+						<div class="oak_park" id="OP_content">
+							<p>Oak Park</p>
+								<img src="images/op_img.jpeg" alt="Oak Park" class="thumbnail"  id="oak_park_pic">
+				</div>
+					
 
 			<div class="southfield" id="sf_content">
 				<p>Southfield</p>
-				<img src="images/sf_pic.jpeg" alt="Southfield" id="Southfield_pic">
+				<img src="images/sf_pic.jpeg" alt="Southfield" class="thumbnail" id="Southfield_pic">
 
 			</div>
 
@@ -68,7 +79,6 @@
 	`<footer>
 		<p>Kendricks Real Estate Management llc</p>
 	</footer>
-
 
 
 
