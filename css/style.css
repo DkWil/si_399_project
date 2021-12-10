@@ -63,7 +63,8 @@ width: 100%;}
 
         .active{background-color: rgb(68, 66, 65);
             border-top-left-radius: 10px;
-        border-top-right-radius: 10px;}
+        border-top-right-radius: 10px;
+    text-decoration:underline ;}
 
 #nav_item_a:active{color: rgb(199, 13, 13);}
 

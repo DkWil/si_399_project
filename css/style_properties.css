@@ -41,7 +41,8 @@ a:hover {
 
       .active{background-color: rgb(68, 66, 65);
         border-top-left-radius: 10px;
-    border-top-right-radius: 10px;}
+    border-top-right-radius: 10px;
+    text-decoration:underline ;}
 
 .nav_links{ display: flex;
     flex-direction: column;
