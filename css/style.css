@@ -1,16 +1,26 @@
 body
 {background-color: rgb(110, 109, 109);
 background-image:url("..//images/concrete_image.jpg") ;
+/* background-image: url("../images/sell_image.jpg"); */
     color:rgb(7, 7, 7);
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
-color: white;
+color:#f5f5f5;
 }
 
-#MP{display:grid;
+header{background-color: rgb(163, 80, 12);}
+.company_name{color: white;
+    text-align: left;}
+#mp{display:grid;
     grid-template-columns: 1fr  ;
     width: 90%;
-    margin: auto;}
+    margin: auto;
+background-image: url("../images/sell_image.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;}
 
 
 .nav_links{    display: flex;
@@ -19,14 +29,15 @@ color: white;
     }    
 
 .skip{top: -60px;
-        position: absolute;}
+        position: absolute;
+    background-color: black;}
     
 .skip:focus{top: 60px;
            }
     
 
            a:link { 
-            background-color: #000000;
+                    
             color: white;
             padding: 14px 25px;
             text-align: center;
@@ -35,7 +46,7 @@ color: white;
             border-radius: 10px;
         }
         
-        a:visited{background-color: rgb(148, 16, 11);
+        a:visited{
         color: white;
         padding: 14px 25px;
         text-align: center;
@@ -44,66 +55,26 @@ color: white;
         border-radius: 10px;
         }
               
-        a:hover, a:active {
-            background-color: rgb(173, 86, 15);
+        a:hover  {
+            background-color: rgb(218, 34, 10);
               }
 
+        a:active{background-color: black;}
 
+        .active{background-color: rgb(68, 66, 65);
+            border-top-left-radius: 10px;
+        border-top-right-radius: 10px;}
 
+#nav_item_a:active{color: rgb(199, 13, 13);}
 
-              .flip-card {
-                background-color: transparent;
-                width: 300px;
-                height: 300px;
-                perspective: 1000px;
-              }
-              
-              .flip-card-inner {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                transition: transform 0.6s;
-                transform-style: preserve-3d;
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-              }
-              
-              .flip-card:hover .flip-card-inner {
-                transform: rotateY(180deg);
-              }
-              .flip-card:focus .flip-card-inner {
-                transform: rotateY(180deg);
-              }
-              
-              .flip-card-front, .flip-card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-              }
-              
-              .flip-card-front {
-                background-color: #bbb;
-                color: black;
-              }
-              
-              .flip-card-back {
-                background-color: #2980b9;
-                color: white;
-                transform: rotateY(180deg);
-              }
-
-
-#nav_item_a:active{color: rgb(173, 86, 15);}
-
-
+#logo{width: 100%;}
 
 header{display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-align-items: center;}
+align-items: center;
+background-image:url("../images/skyline.jpeg")}
 
 
 /* h1{display:flex;
@@ -154,7 +125,7 @@ justify-content: center;}
     align-items: center;}
 
 
-
+footer{text-align: center;}
 
 
 @media screen and (min-width:750px)  {
@@ -163,7 +134,7 @@ justify-content: center;}
         flex-direction: row;
         justify-content: center;}
 
-    #MP{display:grid;
+    #mp{display:grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
         width: 90%;
@@ -178,10 +149,12 @@ justify-content: center;}
     }
 
     p{font: bold;
-    font-size: 25px;}
+    font-size: 25px;
+line-height: 25px;}
 
 
-    #Intro {padding-top: 25px;
+    #intro {line-height: 25px;
+        padding-top: 25px;
         grid-column: 1/span 2 ;
         text-align: center;
         padding-bottom: 25px;
@@ -195,7 +168,8 @@ justify-content: center;}
 
     #locations{grid-column: 1/span 2;}
    
-    footer{padding-top:200px}
+    footer{padding-top:20px;
+        text-align: center;}
 } 
 
 
@@ -203,27 +177,29 @@ justify-content: center;}
 
 @media screen and (min-width: 1000px) {
 
-    #MP{grid-template-columns: 1fr 1fr 1fr;
+    #mp{grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;}
 
     #par2{display: grid;
-    grid-column: 1/span 5;}
+    grid-column: 1/span 5;
+    line-height: 25px;}
 
     #locations{display: grid;
     grid-column: 2/span 1;}
     #par3{display: grid;
     grid-row: 3/span 1;
-grid-column: 1/span 5;}
+grid-column: 1/span 5;
+line-height: 25px;}
 
 
 
-    #OP_content{width: 100%;
+    #op_content{width: 100%;
         grid-column: 3/span 1;
     grid-row: 5/span 2;}
 
     #oak_park_pic{width: 200%;}
 
-    #Intro{grid-column: 1/span 5;
+    #intro{grid-column: 1/span 5;
     text-align: center;}
 
     #det_content{grid-column: 2/span 1;
@@ -243,8 +219,38 @@ width: 85%;}
     
 }
 
+.company_name{ animation: mymove 5s ;}
 
+    @keyframes mymove {
+        from {position: relative;
+            margin-left: 0%;
+            width: 300%;
+          opacity: .5;
+        
+        }
+        to {margin-left: 83%;
+            width: 100%;
+        opacity: 1;}
+      }
 
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+  .company_name{animation: none;}
+    /*Turn off transition*/
+    .skip a{
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off parallax*/
+    #mp{
+      background-attachment: initial;
+    }
+  }
 
 
 

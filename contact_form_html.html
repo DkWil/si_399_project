@@ -5,14 +5,24 @@
     <title>
         Contact form 
     </title>
-
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/form_style.css" rel="stylesheet">
+
 
 
 </head>
 
+    
 <form action ="#" method="get" id="contact_info"></form>
 <body>
+    <header>
+    <nav>
+        <ul class="nav_links" id="nav">
+           
+            <li class="nav_item"><a href="contact.html">back</a></li>
+            
+        </ul>
     <fieldset>
         <legend> Your details  </legend>
         <ol>
@@ -58,6 +68,32 @@
                 </li>
              </ol>
         </fieldset>
+    </ol>
+</fieldset>
+
+<fieldset>
+    <legend> Property you wish to pursue</legend>
+    <ol>
+        
+        <li>
+             <label> City: <input type = "text" name = "b-city" placeholder = "Ann Arbor"></label> </li>
+ 
+         <li>
+             <label>State: <select class="form-control bfh-states" data-country="US" data-state="MI" required name = b-city></select></label></li>
+ 
+         <li>
+             
+             <label> Zip <input type="text" pattern="[0-9]{5}" name="b-zip"></label></li> 
+
+         <li>
+            <label>Property type<input type="text" placeholder="Apartment"></label>
+         </li>
+        <li> 
+            <label for="country">Country</label>
+            <select id="country" class="bfh-countries" data-country="US" required></select>
+        </li>
+     </ol>
+</fieldset>
         
 
 
